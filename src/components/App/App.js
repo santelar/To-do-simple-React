@@ -20,9 +20,13 @@ function App() {
   }
 
   const [todosData, setTodosData] = React.useState([
-    createItem("Me, myself, and i"),
-    createItem("Keep calm and code"),
-    createItem("Fly bird, fly")
+    createItem("Нарисовать круглую пирамиду"),
+    createItem("Покормить кота сардинами"),
+    createItem("Купить новый рубанок"),
+    createItem("Спросить соседа где прячет деньги"),
+    createItem("Улыбнуться продавщице в магазине"),
+    createItem("Заштопать полосатый носок"),
+    createItem("Спасти мир")
 
   ]); //
 
@@ -34,7 +38,7 @@ function App() {
 
     const oldItem = todosData[index]; //выбираю эту карточку в переменную, выбирается карточка с id 1
 
-    const newItem = { //меняю в старом итеме занчение boolen-ключа done/important в зависимости от того что было щелкнуто в TodoListItem и сохраняю в переменную
+    const newItem = { //меняю в старом айтеме значение done/important в зависимости от того был ли нажат айтем и сохраняю в переменную
       ...oldItem,
       [propName]: propValue, 
     };
@@ -42,7 +46,7 @@ function App() {
     const newArray = [
       ...todosData.slice(0, index), //вставляю вместо старой карточки со старым значением done/important новую карточку, заменяя карточку по index'у 
       newItem,
-      ...todosData.slice(index + 1), // но оно не заменяется) *feelsbadman*
+      ...todosData.slice(index + 1),
     ]
   
     setTodosData(newArray)

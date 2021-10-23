@@ -35,13 +35,3 @@ function TodoListItem ( { item, onDelete, changeTodoItem,  } ) {
 }
 
 export default TodoListItem;
-
-
-/*     let classNames = 'todo__list-item';
-    if (isDone) {
-      classNames += ' todo__list-item_done';
-    }
-
-    if (isImportant) {
-      classNames += ' important';
-    } */

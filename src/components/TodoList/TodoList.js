@@ -4,13 +4,16 @@ import TodoListItem from '../TodoListItem/TodoListItem'
 
 function TodoList ( { todoData, onDelete, changeTodoItem}) {
     
-    const elements = todoData.map((item) => { //раскладывается на новый массив замещая старый с новыми id
+    const elements = todoData.map((item) => { 
+        //создаем новый массив на основе старого, элементы получают новые id
 
         return (
             <li key={item.id} className="list-group-item todo__list-item">
-                <TodoListItem item={ item }  /* прокидываю итем для того, чтобы взять lable, id, и состояния done/important для передачи в changeTodoItem*/
+                <TodoListItem item={ item }
+                // пробрасываем состояние выполнен/важное для changeTodoItem и взять его label
                     onDelete = { () => onDelete(item.id) } 
-                    changeTodoItem = { changeTodoItem } /* прокидываю функцию в итем */
+                    changeTodoItem = { changeTodoItem }
+                // пробрасываем функцию для ее вызова из айтема напрямую
                 />
             </li>
         )

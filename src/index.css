@@ -3,20 +3,14 @@
 @import './blocks/todo/todo__list/todo__list.css';
 @import './blocks/todo/todo__list-item/todo-list-item.css';
 @import './blocks/todo/todo__input/todo__input.css';
-
 @import './blocks/todo/todo__container/todo_container.css';
-
-
 @import './blocks/todo/todo__button-container/todo__button-container.css';
 @import './blocks/todo/todo__button/todo__button.css';
 @import './blocks/todo/todo__button/_active/todo__button_active.css';
 @import './blocks/todo/todo__counter/todo__counter.css';
-
 @import './blocks/todo/todo__container/_li/todo__container_li.css';
 @import './blocks/todo/todo__container/_header/todo__container_header.css';
-
 @import './blocks/todo/todo__list-item-button/todo__list-item-button.css';
-
 @import './blocks/todo/todo__list-item/_done/todo__list-item_done.css';
 @import './blocks/todo/todo__list-item/_important/todo__list-item_important.css';
 @import './blocks/todo/todo__button-add/todo__button-add.css';
